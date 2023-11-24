@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li > a,
+div > a {
+  color: #444444;
+  font-family: 'Nunito', sans-serif;
+}
+a:hover {
+  color: #848484;
+  transition: 0.3s ease-in;
+}
+
+/* Container */
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+
+/* Welcome */
+.welcome {
+  min-height: 92vh;
+  width: 100%;
+  background-image: url(/img/pictures/wc-background.jpg);
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.welcome::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  z-index: 2;
+}
+
+.welcome__logo,
+.welcome__heading,
+.welcome__arrow {
+  z-index: 2;
+}
+
+.welcome__logo {
+  padding-top: 245px;
+  width: 150px;
+}
+
+.welcome__heading {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #313c43;
+  max-width: 33rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.welcome__arrow {
+  padding-top: 9.3rem;
+}
+
+.arb-par {
+  font-family: "Raleway", sans-serif;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 1.5em;
+  padding: 0 5px;
+  font-weight: 400;
+}
+
+.grid {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-image {
+  max-width: 400px;
+}
+
+.card-heading {
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  padding: 3px 0 50px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contacts-block {
+  padding: 100px 0 100px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+
+
+@media (min-width: 900px) {
+  .header__inner {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__main-logo {
+    position: absolute;
+    top: 5px;
+    left: 136px;
+  }
+  .header__mobile-logo {
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 21px 146px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .header__inner {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__main-logo {
+    display: none;
+  }
+  .header__mobile-logo {
+    position: fixed;
+    z-index: 2;
+    top: 0.8rem;
+    left: 0.8rem;
+    width: 40px;
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: #000000 solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #545454;
+    color: white;
+    list-style: none;
+    padding: 4rem 4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  .menuItem {
+    color: #ffffff;
+  }
+
+  .card-image {
+    max-width: 300px;
+  }
+} /*# sourceMappingURL=styles.css.map */
