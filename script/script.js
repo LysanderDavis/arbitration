@@ -30,4 +30,34 @@ scrollButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-/* Rates */
+/* Calculator */
+
+function calculateFee() {
+  var type = document.getElementById("type").value;
+  var feeInput = document.getElementById("fee").value;
+
+  if (feeInput === "") {
+    alert("Please enter a fee amount.");
+    return;
+  }
+
+  var fee = parseFloat(feeInput);
+
+  if (isNaN(fee)) {
+    alert("Please enter a valid number for the fee.");
+    return;
+  }
+
+  var resultElement = document.getElementById("result");
+
+  if (type === "individual") {
+    // Increase fee by 2.5% for an individual
+    var increasedFee = fee + (fee * 0.025);
+    resultElement.textContent = "$" + increasedFee.toFixed(2);
+  } else if (type === "entity") {
+    // Increase fee by 1.5% for an entity
+    var increasedFee = fee + (fee * 0.015);
+    resultElement.textContent = "$" + increasedFee.toFixed(2);
+  }
+}
+

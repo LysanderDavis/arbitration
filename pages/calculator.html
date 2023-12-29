@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/img/icons/icon.png" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Третейский Суд</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header__inner">
+        <!-- Logo -->
+
+        <a href="/pages/index.html">
+          <img src="/img/icons/logo.svg" alt="" class="header__main-logo" />
+          <img
+            src="/img/icons/mobile-logo.svg"
+            alt=""
+            class="header__mobile-logo"
+          />
+        </a>
+        <!-- Navigation -->
+
+        <ul class="menu">
+          <li><a class="menuItem" href="/pages/index.html">Главная</a></li>
+          <li>
+            <a class="menuItem" href="/pages/calculator.html">Калькулятор</a>
+          </li>
+          <li>
+            <a class="menuItem" href="/pages/arbitors.html">Третейские Судья</a>
+          </li>
+        </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
+    </header>
+    <!-- Fee Calculator -->
+
+    <div class="fee-calculator">
+      <label for="type">Вид:</label>
+      <br />
+      <select id="type">
+        <option value="individual">Физическое лицо</option>
+        <option value="entity">Юридическое лицо</option>
+      </select>
+
+      <br />
+
+      <label for="fee" class="label__fee">Стоимость:</label>
+      <br />
+      <input type="number" id="fee" placeholder="Enter fee amount" />
+
+      <br />
+
+      <button onclick="calculateFee()">Рассчитать</button>
+
+      <br />
+      <div class="final-fee">
+        <label for="result">Конечная стоимость:</label>
+        <br />
+        <div id="result"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="contacts-block">
+        <h4 class="contacts-heading">Контакты:</h4>
+        <a href="tel:+1234567890">Тел: (+99890) 902-2522</a>
+        <br />
+        <a href="https://t.me/">Телеграм: (+99890) 906-1130</a>
+      </div>
+    </footer>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
