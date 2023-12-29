@@ -52,15 +52,16 @@ function calculateFee() {
 
   if (type === "individual") {
     // Increase fee by 2.5% for an individual
-    var increasedFee = fee + (fee * 0.025);
+    var increasedFee = fee + fee * 0.025;
     resultElement.textContent = "$" + increasedFee.toFixed(2);
   } else if (type === "entity") {
     // Increase fee by 1.5% for an entity
-    var increasedFee = fee + (fee * 0.015);
+    var increasedFee = fee + fee * 0.015;
     resultElement.textContent = "$" + increasedFee.toFixed(2);
   }
 }
 
+// Event listener for the "Enter" key
 document.getElementById("fee").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     calculateFee();
