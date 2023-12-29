@@ -52,12 +52,12 @@ function calculateFee() {
 
   if (type === "individual") {
     // Increase fee by 2.5% for an individual
-    var increasedFee = fee + fee * 0.025;
-    resultElement.textContent = "$" + increasedFee.toFixed(2);
+    var increasedFee = fee * 0.025;
+    resultElement.textContent = "сум" + increasedFee.toFixed(2);
   } else if (type === "entity") {
     // Increase fee by 1.5% for an entity
-    var increasedFee = fee + fee * 0.015;
-    resultElement.textContent = "$" + increasedFee.toFixed(2);
+    var increasedFee = fee * 0.015;
+    resultElement.textContent = "сум" + increasedFee.toFixed(2);
   }
 }
 
