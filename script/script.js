@@ -61,3 +61,8 @@ function calculateFee() {
   }
 }
 
+document.getElementById("fee").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    calculateFee();
+  }
+});
