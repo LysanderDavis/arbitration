@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Третейский Суд</title>
+    <title>Arbitration Court</title>
   </head>
   <body>
     <!-- Header -->
@@ -31,12 +31,16 @@
         <!-- Navigation -->
 
         <ul class="menu">
-          <li><a class="menuItem" href="/index.html">Главная</a></li>
+          <li><a class="menuItem" href="/en/index_en.html">Home</a></li>
           <li>
-            <a class="menuItem" href="/pages/calculator.html">Калькулятор</a>
+            <a class="menuItem" href="/en/pages_en/calculator_en.html"
+              >Calculator</a
+            >
           </li>
           <li>
-            <a class="menuItem" href="/pages/arbitors.html">Третейские Судьи</a>
+            <a class="menuItem" href="/en/pages_en/arbitors_en.html"
+              >Arbitrators</a
+            >
           </li>
         </ul>
         <button class="hamburger">
@@ -48,36 +52,42 @@
     <!-- Fee Calculator -->
 
     <div class="fee-calculator">
-      <label for="type">Вид:</label>
+      <label for="type">Type:</label>
       <br />
       <select id="type">
-        <option value="individual">Физическое лицо</option>
-        <option value="entity">Юридическое лицо</option>
+        <option value="individual">Individual</option>
+        <option value="entity">Legal entity</option>
       </select>
 
       <br />
 
-      <label for="fee" class="label__fee">Стоимость:</label>
+      <label for="fee" class="label__fee">Cost:</label>
       <br />
       <input type="number" id="fee" placeholder="Enter fee amount" />
 
       <br />
 
-      <button onclick="calculateFee()">Рассчитать</button>
+      <button onclick="calculateFee()">Calculate</button>
 
       <br />
       <div class="final-fee">
-        <label for="result">Сумма третейского сбора:</label>
+        <label for="result">Amount of arbitration fee:</label>
         <br />
         <div id="result"></div>
       </div>
     </div>
     <footer class="footer">
       <div class="contacts-block">
-        <h4 class="contacts-heading">Контакты:</h4>
-        <a href="tel:+1234567890">Тел: (+99890) 902-2522</a>
+        <h4 class="contacts-heading">Contacts:</h4>
+        <a href="tel:+1234567890">Tel: (+99890) 902-2522</a>
         <br />
-        <a href="https://t.me/">Телеграм: 953888808</a>
+        <a href="https://t.me/">Telegram: 953888808</a>
+        <h4 class="contacts-heading">Language:</h4>
+        <a href="/index.html">Русский</a>
+        <br />
+        <a href="/en/index_en.html">English</a>
+        <br />
+        <a href="/...">O'zbek</a>
       </div>
     </footer>
     <script src="/script/script.js"></script>
