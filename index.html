@@ -16,10 +16,10 @@
   <body>
     <!-- Header -->
 
+    <!-- Header -->
     <header class="header">
       <div class="header__inner">
         <!-- Logo -->
-
         <a href="#">
           <img src="/img/icons/logo.svg" alt="" class="header__main-logo" />
           <img
@@ -29,11 +29,27 @@
           />
         </a>
         <!-- Navigation -->
-
         <ul class="menu">
           <li><a class="menuItem" href="#">Главная</a></li>
-          <li><a class="menuItem" href="/pages/calculator.html">Калькулятор</a></li>
-          <li><a class="menuItem" href="/pages/arbitors.html">Третейские судьи</a></li>
+          <li>
+            <a class="menuItem" href="/pages/calculator.html">Калькулятор</a>
+          </li>
+          <li>
+            <a class="menuItem" href="/pages/arbitors.html">Третейские судьи</a>
+          </li>
+          <!-- Language Switch Dropdown -->
+
+          <div class="language-dropdown">
+            <button class="language-dropdown-btn" id="languageDropdownBtn">
+              <span class="current-language">Русский</span>
+              <i class="material-icons">arrow_drop_down</i>
+            </button>
+            <div class="language-dropdown-content">
+              <a href="#">Русский</a>
+              <a href="/en/index_en.html">English</a>
+              <a href="/uzb/index_uz.html">O'zbek</a>
+            </div>
+          </div>
         </ul>
         <button class="hamburger">
           <i class="menuIcon material-icons">menu</i>
@@ -41,6 +57,7 @@
         </button>
       </div>
     </header>
+
     <!-- Welcome -->
 
     <div class="welcome">
@@ -93,7 +110,9 @@
           alt="a person writing a document"
           class="card-image"
         />
-        <a href="/pages/arbitors.html"><h5 class="card-heading">Третейские судья</h5></a>
+        <a href="/pages/arbitors.html"
+          ><h5 class="card-heading">Третейские судья</h5></a
+        >
       </div>
     </section>
 
@@ -107,7 +126,7 @@
         <a href="#">Русский</a>
         <br />
         <a href="/en/index_en.html">English</a>
-        <br>
+        <br />
         <a href="/uzb/index_uz.html">O'zbek</a>
       </div>
     </footer>

@@ -67,3 +67,22 @@ document.getElementById("fee").addEventListener("keyup", function (event) {
     calculateFee();
   }
 });
+/* Language switcher */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const languageDropdownBtn = document.getElementById('languageDropdownBtn');
+  const languageDropdownContent = document.querySelector('.language-dropdown-content');
+
+  languageDropdownBtn.addEventListener('click', function () {
+    languageDropdownContent.classList.toggle('show');
+  });
+
+  // Close the dropdown when clicking outside of it
+  window.addEventListener('click', function (event) {
+    if (!event.target.matches('.language-dropdown-btn')) {
+      if (languageDropdownContent.classList.contains('show')) {
+        languageDropdownContent.classList.remove('show');
+      }
+    }
+  });
+});
