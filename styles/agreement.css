@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .agreement {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+
+  .party {
+    margin-bottom: 10px;
+  }
+
+  .terms {
+    margin-top: 20px;
+  }
+
+  .signature {
+    margin-top: 40px;
+    text-align: right;
+  }
